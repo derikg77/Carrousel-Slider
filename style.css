@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    font-family: "Roboto", sans-serif;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(211, 39%, 23%);
+}
+
+h4 {
+    font-size: .875rem;
+    color: hsl(211, 39%, 23%);
+}
+
+.container {
+    width: 80vw;
+    max-width: 620px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.underline {
+    height: .25rem;
+    width: 5rem;
+    background: #6495ED;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: .25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+}
+
+#person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    content: "\f10e";
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: hsl(205, 78%, 60%);
+    color: #fff;
+    transform: translatey(25%);
+}
+
+.img-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -.25rem;
+    right: -.5rem;
+    border-radius: 50%;
+    background: hsl(205, 78%, 60%);
+
+}
+
+#autor {
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+#job {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    color: hsl(205, 78%, 60%);
+    font-size: .85rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#info {
+    margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: hsl(205, 90%, 76%);
+    margin: 0 0.5rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: hsl(205, 78%, 60%);
+}
